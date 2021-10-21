@@ -1,0 +1,8 @@
+apiVersion: v1
+kind: Pod
+metadata:
+  name: k8s-isolation-consume-inodes
+spec:
+  containers:
+  - name: consume-inodes
+    image: quay.io/simonkrenger/consume-inodes:latest
