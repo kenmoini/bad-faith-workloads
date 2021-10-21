@@ -1,0 +1,8 @@
+apiVersion: v1
+kind: Pod
+metadata:
+  name: k8s-isolation-entropy
+spec:
+  containers:
+  - name: entropy
+    image: quay.io/simonkrenger/entropy:latest
