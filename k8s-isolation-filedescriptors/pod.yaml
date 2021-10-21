@@ -1,0 +1,8 @@
+apiVersion: v1
+kind: Pod
+metadata:
+  name: k8s-isolation-filedescriptors
+spec:
+  containers:
+  - name: filedescriptors
+    image: quay.io/simonkrenger/filedescriptors:latest
