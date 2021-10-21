@@ -3,6 +3,8 @@ kind: Service
 metadata:
   name: webwolf
 spec:
+  selector:
+    app: goatandwolf
   ports:
     - protocol: TCP
       port: 9090
