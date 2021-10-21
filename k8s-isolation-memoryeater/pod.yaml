@@ -1,0 +1,8 @@
+apiVersion: v1
+kind: Pod
+metadata:
+  name: k8s-isolation-memoryeater
+spec:
+  containers:
+  - name: memoryeater
+    image: quay.io/simonkrenger/memoryeater:latest
