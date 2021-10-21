@@ -1,0 +1,8 @@
+apiVersion: v1
+kind: Pod
+metadata:
+  name: k8s-isolation-logspam
+spec:
+  containers:
+  - name: logspam
+    image: quay.io/simonkrenger/logspam:latest
