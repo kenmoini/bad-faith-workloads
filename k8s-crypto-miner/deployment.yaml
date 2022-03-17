@@ -1,0 +1,26 @@
+apiVersion: apps/v1
+kind: Deployment
+metadata:
+  name: crypto-miner
+  labels:
+    app: crypto-miner
+spec:
+  selector:
+    matchLabels:
+      app: crypto-miner
+  replicas: 3
+  template:
+    metadata:
+      labels:
+        app: crypto-miner
+    spec:
+      containers:
+      - name: crypto-miner
+        image: servethehome/monero_cpu_minergate:latest
+        env:
+        ## Sign up at https://minergate.com/a/c654a64eceed5d520baf202d
+        - name: username
+          value: ken@kenmoini.com
+        - name: TZ
+          value: America/New_York
+        workingDir: /tmp
